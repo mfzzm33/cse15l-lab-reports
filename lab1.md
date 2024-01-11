@@ -7,7 +7,7 @@ The demonstrations will be shown in the following workspace: [link](https://edst
 
 The organization of the files in our demo is shown in the image below:
 
-![image](https://github.com/mfzzm33/cse15l-lab-reports/blob/main/Screen%20Shot%202024-01-11%20at%209.17.20%20AM.png)
+![image](Screen Shot 2024-01-11 at 9.17.20 AM.png)
 
 Execute the **cd** command:
 ```
