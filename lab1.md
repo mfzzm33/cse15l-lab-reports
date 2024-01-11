@@ -6,7 +6,8 @@ In the following, we will be showing examples of using each command with *no* ar
 The demonstrations will be shown in the following workspace: [link](https://edstem.org/us/courses/51148/workspaces/potvx6SYlBTZfdQa0SO0soDHoPkfwHEa).
 
 The organization of the files in our demo is shown in the image below:
-![image](file:///Users/MayZhang/Desktop/Screen%20Shot%202024-01-11%20at%209.17.20%20AM.png)
+![image](<img width="1440" alt="image" src="https://github.com/mfzzm33/cse15l-lab-reports/assets/145744591/83024dab-16f7-4512-8af7-455055dcd82d">
+)
 
 Execute the **cd** command:
 ```
