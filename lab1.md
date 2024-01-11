@@ -21,6 +21,7 @@ bash: cd: README: Not a directory
 3. When the argument is a path to a file, it creates an **error** and returns that the file is not a directory.
 4. The working directory of the first two commands are in `/home` while the working directory of the last is in `lecture1`. This is because we changed the working directory into lecture1 in the last command.
 ***
+
 Execute the **ls** command:
 ```
 [user@sahara ~]$ ls
@@ -38,6 +39,7 @@ README
 3. When the argument is a path to a file, it creates an **error** since it cannot directly access the file in the directory lecture1. So we change the working directory to *lecture1* and redo the command, then it returns the name of the file itself.
 4. The working directory of the first three commands are in `/home` while the working directory of the last is in `lecture1`.
 ***
+
 Execute the **cat** command:
 ```
 [user@sahara ~]$ cat lecture1
