@@ -11,12 +11,15 @@ The organization of the files in our demo is shown in the image below:
 
 Execute the **cd** command:
 ```
-[user@sahara ~]$ cd
 [user@sahara ~]$ cd lecture1
-[user@sahara ~/lecture1]$ cd README
-bash: cd: README: Not a directory
+[user@sahara ~/lecture1]$ cd
+[user@sahara ~]$ cd lecture1
+[user@sahara ~/lecture1]$ cd messages
+[user@sahara ~/lecture1/messages]$ cd
+[user@sahara ~]$ cd README
+bash: cd: README: No such file or directory
 ```
-1. When there's no arguments after, nothing happens. 
+1. When there's no arguments after, the directory is changed back to the root directory `/home`. In the example, I tried starting from a deeper directory, and it always return to `/home`.
 2. When the argument is a path to a directory, it will change the working directory to `/lecture1`.
 3. When the argument is a path to a file, it creates an **error** and returns that the file is not a directory.
 4. The working directory of the first two commands are in `/home` while the working directory of the last is in `lecture1`. This is because we changed the working directory into lecture1 in the last command.
