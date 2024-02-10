@@ -27,12 +27,16 @@ The code for `ChatServer` is shown below:
 
 ### Part 2
 The absolute path to the private and public key for the SSH key for logging into `ieng6` is shown below using the `ls` command.
+The private key in shown from the local computer and the public key from `ieng6`.
+
+![image](public keys.png)
 
 ![image](Screen Shot 2024-01-25 at 9.50.27 AM.png)
 The path is found when running `ssh-keygen`.
 
 After running `ssh-keygen`, we can log into the `ieng6` account without being asked for password.
 
+![image](login.png)
 
 ### Part 3
 In this two weeks, I learnt about how to **remotely connecting** to my `ieng6` account with the use of `ssh` command, 
