@@ -6,16 +6,20 @@ In this part, we wrote a web server called `ChatServer` that supports adding cha
 
 ![image](Screen Shot 2024-01-23 at 5.58.52 PM.png)
 
-First we called the  `add-message` method by adding `/add-message?s=Hello&user=jpolitz` to the browser link.
-1. The relevant argument to those methods is the port number.
-2. The values here are Strings `user` and String `message`. The user here is  `jpolitz` and the message is `Hello`. 
-3. The values of the `user` and `message` do not change since we only display the message instead of making any changes to the values.
+By adding /add-message?s=How are you&user=yash to the URL, the handleRequest method is being triggered.
+1. It extracts the user and the message from the URL parameters. In this case, the URL contains `user=jpolitz` and `s=Hello`, then the user is interpreted as `jpolitz`, and the message as `Hello`.
+2. These values are then used to form a single `String`, where the format is `user: message`. So in this instance, it would be `"jpolitz: Hello"`.
+3. This newly constructed `String` is then added to an `ArrayList` of `String` named `list`, which is a field in the `Handler` class.
+4. The `list` is then returned as a `String` where each message is presented on a new line, providing a history of the chat.
 
 ![image](Screen Shot 2024-01-23 at 6.16.07 PM.png)
 
-We then use the `add-message` method again by adding  `/add-message?s=How are you&user=yash`. 
-1. The user here is  `yash` and the message is `How are you`. 
-2. The `user` and `message` value change to the current input. The chat message is display on the webpage, appended after the last message.
+We then add the path `add-message` to the URL again by adding  `/add-message?s=How are you&user=yash`. 
+1. It extracts the user and the message from the URL parameters. In this case, the URL contains `user=yash` and `s=How are you`, then the user is interpreted as `yash`, and the message as `How are you`.
+2. These values are then used to form a single `String`, where the format is `user: message`. So in this instance, it would be `"yash: How are you"`.
+3. This newly constructed `String` is then added to an `ArrayList` of `String` named `list`, which is a field in the `Handler` class.
+4. The `list` is then returned as a `String` where each message is presented on a new line, providing a history of the chat.
+5. The chat message is display on the webpage, appended after the last message.
 
 The code for `ChatServer` is shown below:
 
@@ -28,7 +32,7 @@ The absolute path to the private and public key for the SSH key for logging into
 The path is found when running `ssh-keygen`.
 
 After running `ssh-keygen`, we can log into the `ieng6` account without being asked for password.
-![image](Screen Shot 2024-01-25 at 9.49.45 AM.png)
+
 
 ### Part 3
 In this two weeks, I learnt about how to **remotely connecting** to my `ieng6` account with the use of `ssh` command, 
